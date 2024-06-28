@@ -1,0 +1,57 @@
+.dress-item {
+    line-height: 29.2px;
+}
+
+.dress-item img {
+    width: 100%;
+    height: auto;
+}
+
+
+.dress-item {
+    grid-template-rows: 440px 105px;
+    display: grid;
+ 
+
+    .retail-price {
+        font-size: 12px;
+        letter-spacing: 0.36px;
+        color: #898989;
+    }
+
+    .brand-name {
+        line-height: 28px;
+        font-size: 18px;
+        color: #a8917f;
+    }
+
+    .dress-name {
+        font-size: 18px;
+        line-height: 28px;
+        color: #141414;
+    }
+
+    height: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    app-image-slider {
+        flex: 1;
+        display: flex;
+
+    }
+
+    .description {
+        display: flex;
+        flex-flow: inherit;
+        flex: 0;
+        align-items: flex-start;
+        width: 100%;
+    }
+}
+
+.dress-item:hover {
+    transform: scale(1.05);
+
+}

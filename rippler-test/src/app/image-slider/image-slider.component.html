@@ -1,0 +1,9 @@
+<div class="slider">
+    <div class="slider-container">
+      <img [src]="imageUrls[currentIndex]" *ngIf="imageUrls.length">
+    </div>
+
+    <button class="prev" (click)="prevImage()">&#10094;</button>
+    <button class="next" (click)="nextImage()">&#10095;</button>
+  </div>
+  

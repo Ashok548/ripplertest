@@ -1,0 +1,11 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+    padding: 20px;
+}
+
+app-dress-item {
+    display: flex;
+    height: 100%;
+}
