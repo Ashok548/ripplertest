@@ -18,7 +18,6 @@ export class DressService {
     return this.http.get(this.apiUrl).pipe(map((resp:any)=>{
       return resp.data.map(dress => {
         dress.images =  dress.images.map((url)=> url = this.prefixImageUrl + url )  
-        console.log(dress)
         return dress;
       });
     }));

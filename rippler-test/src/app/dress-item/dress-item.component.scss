@@ -1,6 +1,4 @@
-.dress-item {
-    line-height: 29.2px;
-}
+
 
 .dress-item img {
     width: 100%;
@@ -9,9 +7,6 @@
 
 
 .dress-item {
-    grid-template-rows: 440px 105px;
-    display: grid;
- 
 
     .retail-price {
         font-size: 12px;
@@ -20,38 +15,58 @@
     }
 
     .brand-name {
-        line-height: 28px;
         font-size: 18px;
         color: #a8917f;
     }
 
     .dress-name {
         font-size: 18px;
-        line-height: 28px;
         color: #141414;
+        font-weight: bold;
     }
 
-    height: 100%;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+
 
     app-image-slider {
         flex: 1;
         display: flex;
+        height: 100%;
+        width: 100%;
 
     }
 
     .description {
+        width: 230px;
         display: flex;
-        flex-flow: inherit;
-        flex: 0;
-        align-items: flex-start;
-        width: 100%;
+        gap: 13px;
+        flex-flow: column;
+
+        section {
+            display: flex;
+            flex-flow: inherit;
+            gap: 5px;
+        }
     }
+
+    div {
+        :not(:first-child) {
+            color: #383838;
+            font-size: 16px;
+            font-family: Lora-Regular;
+        }
+    }
+
+
 }
 
 .dress-item:hover {
     transform: scale(1.05);
 
+}
+
+@media only screen and (max-width: 600px) {
+    .description {
+        width: 100% !important;
+        text-align: center;
+    }
 }
